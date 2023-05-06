@@ -80,6 +80,7 @@ public class MainActivityTest {
         onView(withId(R.id.button_add)).perform(click());
         onView(withId(R.id.editText_name)).perform(ViewActions.typeText("DHaka"));
         onView(withId(R.id.button_confirm)).perform(click());
+        //Espresso.pressBack();
         onData(anything()).inAdapterView(withId(R.id.city_list)).atPosition(0).perform(click());
 
         onView(withId(R.id.second)).check(matches(isDisplayed()));
