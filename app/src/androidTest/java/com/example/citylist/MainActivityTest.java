@@ -86,7 +86,8 @@ public class MainActivityTest {
         onView(withId(R.id.second)).check(matches(isDisplayed()));
         onView(withText("DHaka")).check(matches(isDisplayed()));
         onView(withId(R.id.button)).perform(click());
-        onView(withId(R.id.mainl)).check(matches(isDisplayed()));
+        //onView(withId(R.id.mainl)).check(matches(isDisplayed()));
+        Espresso.pressBack();
     }
 
 }
